@@ -1,2 +1,1 @@
-const myAge = 11;
-console.log(myAge);
+console.log("this is my assingment");
