@@ -13,5 +13,11 @@
 .ionide
 .metals
 .vscode
+index1.html
+style1.css
+project1.html
+project1.css
+project1.js
+.prettierrc
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
