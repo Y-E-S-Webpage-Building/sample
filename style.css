@@ -1,6 +1,7 @@
 body {
     height: 100vh;
-    display: flex;
+    display: inside;
+    align-items: center;
     background-color: #fefbd8;
   }
   h1 {
