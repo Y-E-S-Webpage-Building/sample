@@ -1,4 +1,4 @@
 function printBoth() {
-    const name = document.getElementById('textt' + 'numberr').value;
+    const name = document.getElementById('textt').value;
     document.getElementById("result").innerText = name;
 }
