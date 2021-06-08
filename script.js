@@ -1,3 +1,3 @@
 function functionForbutton() {
-    document.getElementById("demo").innerHTML = textt + numberr;
-  }
+    document.getElementById("demo").innerHTML = numberr;
+  } 
