@@ -1,1 +1,3 @@
-console.log("sexyman");
+function functionForbutton() {
+    document.getElementById("demo").innerHTML = textt + numberr;
+  }
