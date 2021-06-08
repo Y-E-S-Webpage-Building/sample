@@ -1,3 +1,3 @@
 function functionForbutton() {
-    console.log"textt numberr";
+    document.getElementById('textt').value
   } 
