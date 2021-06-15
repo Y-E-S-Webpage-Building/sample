@@ -2,10 +2,10 @@ body {
     height: 100vh;
     display: inside;
     align-items: center;
-    background-color: #fefbd8;
+    background-color: #d8d8d3;
   }
   h1 {
-    font-family: georgia;
+    font-family: bold;
     font-size: 50px;
     line-height: 1.3;
     width: 100%;
@@ -20,5 +20,5 @@ body {
     width: 100%;
     padding: 30px;
     text-align: center;
-    color:fuchsia;
+    color:rgb(61, 56, 61);
   }
