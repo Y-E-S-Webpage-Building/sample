@@ -19,7 +19,10 @@ body {
     margin : 0 auto;  
   }
 
-  #div {
+  #button {
     line-height: 20px;
+    width: 60px;
   }
-  
+  #img {
+    width: 60px;
+  }  
