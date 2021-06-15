@@ -3,6 +3,7 @@ body {
     display: flex;
     align-items: center;
     background: linear-gradient(to top left, #28b487, #7dd56f);
+    line-height: 20px;
   }
   h1 {
     font-family: sans-serif;
@@ -17,3 +18,8 @@ body {
     width : 500px;
     margin : 0 auto;  
   }
+
+  #div {
+    line-height: 20px;
+  }
+  
