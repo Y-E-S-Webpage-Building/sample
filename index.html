@@ -30,6 +30,56 @@
 
       <script src="Script.js"></script>
     </form>
+    <p></p>
+
+    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+    action="https://script.google.com/macros/s/AKfycby1qm2NUv3nBj9qgWVaqeJ5fvQV_GVcn9JZYeLQmvwuf4dP5GJ_/exec">
+    <!-- change the form action to your script url -->
+
+    <fieldset class="pure-group">
+    <label for="name">성함 : </label>
+    <input id="name" name="name" required placeholder="성함을 입력해 주세요." />
+    </fieldset>
+
+    <fieldset class="pure-group">
+    <label for="telephone">연락처 : </label>
+    <input id="telephone" name="telephone" required placeholder="연락처를 입력해 주세요." />
+    </fieldset>
+
+    <fieldset class="pure-group">
+    <label for="email">이메일 :</label>
+    <input id="email" name="email" type="email" value="" required placeholder="이메일 양식에 맞게 작성해 주세요."/>
+    <span id="email-invalid" style="display:none"></span>
+    </fieldset>
+    </br></br>
+
+    <input type="radio" name="radio" id="r1" value="1" checked>기존 전환 문의
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="radio" id="r2" value="0">신규가맹문의
+    </br></br>
+
+    <fieldset class="pure-group">
+    <div id="shop">
+    <label for="shop">기존 상호 : </label>
+    <input id="shop" name="shop" placeholder="기존 상호명" />
+    </div>
+    </fieldset>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div style="display:none;" id="thankyou_message">
+    <h2> 확인 후 바로 연락 드리겠습니다.</h2>
+    </div>
+
+    <button class="button-success pure-button button-xlarge">
+    <i class="fa fa-paper-plane"></i>&nbsp;전송</button>
+    </br></br>
+    </form>
+
+    <!-- END -->
+
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
     <p></p>
     
