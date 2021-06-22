@@ -5,6 +5,11 @@ body {
     align-items: center;
     background: linear-gradient(to top left, #28b487, #7dd56f);
     line-height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate( -50%, -50%);
   }
   h1 {
     font-family: sans-serif;
