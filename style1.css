@@ -1,0 +1,184 @@
+/* selecting globally */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: center;
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(to left bottom, #ffffff, #5CDB95);
+    font-family: Arial;
+    font-size: 10px;
+    /* text-align: center; */
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #05386B;
+}
+
+h2{
+    /* text-align: left; */
+}
+
+/* selecting a specific class */
+.sub-header{
+    color: #0a529b;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* selecting #id tag */
+#poster-image{
+    width: 500px;
+    margin-top: 5px;
+}
+
+/* selecting <input>, and <button> tags */
+input, button{
+    font-size: 15px;
+    padding: 10px;
+}
+
+#your-name-box h2{
+    color: olivedrab;
+    padding: 10px; 
+}
+
+/* form{
+    text-align: left;
+    padding: 10px; 
+} */
+
+#smart-button-container{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: 400px;
+
+}
+header {
+    position: relative;
+    height: 10vh;
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+
+main {
+    height: 85vh;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+.left {
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.right {
+    width: 52rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+footer{
+      height: 5vh;
+      font-size: 17px;
+  }
+
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #05386B;
+}
+.button-xlarge {
+  font-size: 20px;
+  text-align: center;
+}
+button {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 170px;
+  float: left;
+}
+#name, #email, #comments, #number {
+  width: 400px;
+  color: #020202;
+  text-align: left;
+}
+
+form {
+    padding: 5px;
+    text-align: center;
+    background: transparent;
+    display: inline-block;
+  }
+  
+  form input {
+    border: none;
+    background: #ffffff;
+    border-bottom: 1px solid #fff;
+    outline: none;
+  }
+  
+  form button {
+    background: transparent;
+    border: 10px;
+    color: #fff;
+  }
+
+  .pure-group{
+      text-align: left;
+      border: 0px;
+  }
+
+  h2 {
+    color:#05386B; 
+    font-size: 25px;
+    text-align: left;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  textarea {
+    font-family: Arial;
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .right-sub-header{
+      margin-top: 70px;
+      margin-bottom: 0px;
+      color: #05386B;
+      text-align: left;
+      font-size: 20px;
+      background-color: #dbd95a;
+      width: 400px;
+      padding: 5px;
+  }
+
+  .poster-subtitle{
+      color: #05386B;
+      font-size: 15px;
+  }
+
+  .instruction-caption{
+    color: #05386B;
+    background-color: #b7ccda;
+    text-align: left;
+    font-size: 20px;
+    width: 400px;
+    padding: 5px;
+    margin-left: 10px;
+  }
