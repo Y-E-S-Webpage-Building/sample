@@ -27,4 +27,7 @@ body {
     width: 60px;
   }  
   
-  
+  .paying button {
+    width:500px;
+    align-items: center;
+  }
