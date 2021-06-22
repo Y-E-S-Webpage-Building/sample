@@ -39,4 +39,7 @@ body {
   align-items: center;
   position: center;
 }
+.pure-group {
+  width:500px
+}
 }
