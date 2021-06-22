@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <h1>Yettrang Talk Series</h1>
+    <center><h1>Yettrang Talk Series</h1></center>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS Practice</title>
     <link href="style.css" rel="stylesheet"/>
   </head>
   <body>
-    <img id="poster-image" src="https://cdn.discordapp.com/attachments/835893314821685314/841638601333669918/Yettrang_Talk_Series_1.png"/>
+  <link rel="container">
+
+  <center><img id="poster-image" src="https://cdn.discordapp.com/attachments/835893314821685314/841638601333669918/Yettrang_Talk_Series_1.png"</center> 
     <h2>You can meet professional with YES</h2>
     <h4>Just pay for $5</h4>
-    <form id="your-name-box">
-      <h2>Your Name Form</h2>
-      <p class="first">Please fill out this form.</p>
-      <input type="text" placeholder="Your name "/>
-      <button>OK</button><br>
-      <input type="number" placeholder="Your age"/>
-      <button>OK</button>
-      <button><div id="smart-button-container">
+
+    <form id="box" style="text-align: center;">
+      <input id="textt" type="text" placeholder="write down your name "/>
+      <input id="numberr" type="number" placeholder="write down your age "/> <br>
+            
+      <button onclick="printtheinput()" type="button"> OK
+        </button>
+      <div id='result'></div>
+
+      <button onclick="printtheinput2()" type="button"> OK 
+        </button>
+      <div id='result2'></div>
+
+      <script src="Script.js"></script>
+      
+      <div id="smart-button-container">
         <div style="text-align: center;">
           <div id="paypal-button-container"></div>
         </div>
@@ -53,10 +63,44 @@
         }).render('#paypal-button-container');
       }
       initPayPalButton();
-    </script></button>
-     
-  </form>
-  <script>src="script.js"</script>
+    </script>
+
+    
+<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="carpediem1119j@gmail.com"
+action="https://script.google.com/macros/s/AKfycbxh3qGsgJFFukCd-Wwfqsvn5a3sWLwK9K7WPRCBztawIAeG9N-T/exec">
+<!-- change the form action to your script url -->
+
+<fieldset class="pure-group">
+<label for="name">Name : </label>
+<input id="name" name="name" required placeholder="Full Name." />
+</fieldset>
+
+<fieldset class="pure-group">
+<label for="telephone">Phone Number : </label>
+<input id="telephone" name="telephone" required placeholder="Phone Number" />
+</fieldset>
+
+<fieldset class="pure-group">
+<label for="email">Email :</label>
+<input id="email" name="email" type="email" value="" required placeholder="Please Write in proper Email form."/>
+<span id="email-invalid" style="display:none"></span>
+</fieldset>
+</br></br>
+
+<button class="button-success pure-button button-xlarge">
+<i class="fa fa-paper-plane"></i>&nbsp;전송</button>
+</br></br>
+</form>
+
+<!-- END -->
+
+<!-- Submit the Form to Google Using "AJAX" -->
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
+<p></p>
+
+
 
   </body>
 </html>
