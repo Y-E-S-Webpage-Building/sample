@@ -3,27 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS Practice</title>
+    <title>Yettrang Talk Series</title>
     <link href="style1.css" rel="stylesheet"/>
 </head>
 <body>
-    <h1>HTML and CSS learning
-    </h1>
-    <p class = "first">It's always exciting to learn new languages.
-        <a href="https://www.skypickshop.com">skypick website</a>
-    </p>
-   <img id="course-image" src="https://cdn.discordapp.com/attachments/835893314821685314/841638601333669918/Yettrang_Talk_Series_1.png" />
-    <form id="your-name-box">
-        <h2>Your Name Form</h2>
-        <p class="first">Please fill out this form.</p>
-        <input type="text" placeholder="Your name "/>
-        <button>OK</button><br>
-        <input type="number" placeholder="Your age"/>
-        <button>OK</button>
-    </form>
-    
+    <header>
+        <h1>Welcome to Yettrang Talk Series!</h1>
+        <p class = "sub-header">🌎 It's always exciting to meet new people around the world. 🌏</p>
+    </header>
+    <main>
+        <section class="left">
+            <img id="poster-image" src="https://cdn.discordapp.com/attachments/835893314821685312/854732657563926528/Yettrang_talk_series_3_1.png" 
+            onclick="window.open(this.src)"
+            />
+            <p class="poster-subtitle">(크게 보시려면 포스터를 클릭하세요!🔎)</p>
+        </section>
+        <section class="right">
+        
+        <div class="right-sub-header">결제 전, 반드시 아래 정보를 기입한 다음 <br>
+             Send 버튼을 눌러주세요. ⬇︎⬇︎ </div>
+    <!-- START HERE -->
+            <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 
-<!-- <a href="https://ibb.co/PCvdrzr"><img src="https://cdn.discordapp.com/attachments/835893314821685314/841638601333669918/Yettrang_Talk_Series_1.png" alt="Yettrang-Talk-Series-1" border="0" width=500px></a> -->
+    <form class="gform pure-form pure-form-stacked" method="POST" 
+            action="https://script.google.com/macros/s/AKfycbygYzOlJw-o8ohc71gVyvf8TuySOFLlqbdKzQ_ABt3L4XtXoVMD7wn200RKN_sWWk8lmQ/exec">
+            <!-- change the form action to your script url -->
 
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name;" style="color:#05386B; font-size: 20px;">Full Name: </label><br>
+        <input id="name" name="name" required placeholder="First and Last Name" />
+      </fieldset>
+      
+      <fieldset class="pure-group">
+          <label for="email;" style="color:#05386B; font-size: 20px;">Email Address:</label><br>
+          <input id="email" name="email" type="email" value=""
+          required placeholder="your.name@email.com"/>
+          
+        <fieldset class="pure-group">
+            <label for="number;" style="color:#05386B; font-size: 20px;">Phone Number: </label><br>
+            <input id="number" name="number"
+            required placeholder="Phone Number"/>
+          </fieldset>
+        </fieldset>
+        
+        <fieldset class="pure-group">
+          <label for="comments;" style="color:#05386B; font-size: 20px;">Comments(Optional): </label><br>
+          <textarea id="comments" name="comments" rows="5"
+          placeholder="🌵 Tell us anything you want to share! 🌵"></textarea>
+        </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2 >Thanks for submitting this form!</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+
+    <p class="instruction-caption">결제 후, Zoom 링크와 Y.E.S. 이벤트 참여방법을 <br>
+    이메일로 보내드립니다. 📧</p>
+    <div id="smart-button-container">
+        <div id="paypal-button-container"></div>
+    </div>
+             <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+             <script>
+               function initPayPalButton() {
+                 paypal.Buttons({
+                   style: {
+                     shape: 'rect',
+                     color: 'gold',
+                     layout: 'vertical',
+                     label: 'pay',
+                     
+                   },
+             
+                   createOrder: function(data, actions) {
+                     return actions.order.create({
+                       purchase_units: [{"description":"Yettrang Talk Series Virtual Ticket","amount":{"currency_code":"USD","value":5}}]
+                     });
+                   },
+             
+                   onApprove: function(data, actions) {
+                     return actions.order.capture().then(function(details) {
+                       alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                     });
+                   },
+             
+                   onError: function(err) {
+                     console.log(err);
+                   }
+                 }).render('#paypal-button-container');
+               }
+               initPayPalButton();
+             </script>
+        </section>
+    </main>
+    <footer>
+        <p class="yettrang">Learn more about <a id="yettrangLink" href="https://www.yettrang.org/" onclick="newWindow();return false;">Yettrang Academy 📖 </a></p>
+    </footer>
+    <script src="script1.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 </body>
 </html>
