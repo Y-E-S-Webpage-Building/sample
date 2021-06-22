@@ -1,6 +1,6 @@
 
 function printtheinput() {
-  const name = document.getElementById('textt').value;
+  const name = document.getElementById('text').value;
   document.getElementById("result").innerText = name;
 }
 
