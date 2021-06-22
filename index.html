@@ -66,39 +66,41 @@
     </script>
 
     
-<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="carpediem1119j@gmail.com"
-action="https://script.google.com/macros/s/AKfycbxh3qGsgJFFukCd-Wwfqsvn5a3sWLwK9K7WPRCBztawIAeG9N-T/exec">
-<!-- change the form action to your script url -->
-
-<fieldset class="pure-group">
-<label for="name">Name : </label>
-<input id="name" name="name" required placeholder="Full Name." />
-</fieldset>
-
-<fieldset class="pure-group">
-<label for="telephone">Phone Number : </label>
-<input id="telephone" name="telephone" required placeholder="Phone Number" />
-</fieldset>
-
-<fieldset class="pure-group">
-<label for="email">Email :</label>
-<input id="email" name="email" type="email" value="" required placeholder="Please Write in proper Email form."/>
-<span id="email-invalid" style="display:none"></span>
-</fieldset>
-</br></br>
-
-<button class="button-success pure-button button-xlarge">
-<i class="fa fa-paper-plane"></i>&nbsp;전송</button>
-</br></br>
-</form>
-
-<!-- END -->
-
-<!-- Submit the Form to Google Using "AJAX" -->
-<script data-cfasync="false" type="text/javascript"
-src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-
-<p></p>
+<div class="row" style="margin-left:1rem;margin-right:1rem;">
+  <div class="col-md-1"></div>
+  
+  <div class="col-md-10">
+  <form id="gform" class="gform" method="post"
+  action="https://script.google.com/macros/s/AKfycbwIK_rW3WbZdl8JifjlJbV3GmaeZb_lSjfmL2YX/exec">
+  <div class="form-elements">
+  <label for="name">name: </label>
+  <input type="text" class="form-control" name="Name" id="Nameg" placeholder="이름을 입력해주세요"/><br />
+  
+  <label for="email">Email Address:</label>
+  <input type="text" class="form-control" name="email" id="email" placeholder="이메일을 입력해주세요"/><br />
+  
+  <label for="email">Contents:</label>
+  <textarea class="form-control" name="contents" id ="contents" placeholder="내용을 입력해주세요" style="height:170px;"></textarea><br/>
+  <div style="font-size:3vmax;text-align: center;">
+  <button class="btn btn-dark" style="font-size: 1.7vmax;margin-bottom:5%;margin-top: -2rem;">
+  메시지 보내기</button></div>
+  </div>
+  <div class="thankyou_message" style="display:none;">
+  <!-- <h2><em>Thanks</em> for contacting us!<br>
+  We will get back to you soon!</h2> -->
+  <h2><em>감사합니다.</em><br>
+  곧 답장을 하겠습니다!</h2>
+  </div>
+  
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+  </script>
+  
+  </form>
+  
+  </div>
+  <div class="col-md-1"></div>
+  </div>
 
 
 
