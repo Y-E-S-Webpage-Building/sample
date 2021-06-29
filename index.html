@@ -1,108 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <center><h1>Yettrang Talk Series</h1></center>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS Practice</title>
+    <title>Yettrang_Talk_Series_YES</title>
     <link href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,700;1,800&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
   </head>
   <body>
-  <link rel="container">
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src=""></a>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Course</a></li>
+            <li><a href="">Sell</a></li>
+            <li><a href="">Buy</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars"  onclick="showMenu()"></i>
+      </nav>
 
-  <center><img id="poster-image" src="https://cdn.discordapp.com/attachments/835893314821685314/841638601333669918/Yettrang_Talk_Series_1.png"</center> 
+      <div class="text-box">
+        <h1>Yettrang Talk Series</h1>
+        <p>Making website is now one of the easiest thing in the world. 
+          You just need to learn HTML, CSS,<br> Javascript and you are good to go.
+        </p>
+        <a href=""class="hero-btn">Visit Us To Know More</a>
+      </div>
+
+    </section>
+
+    <!-- -----course------ -->
+
+    <section class="Course">
+      <h1>Course We Offer</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Yettrang</h3>
+          <center><img id="poster-image" src="https://cdn.discordapp.com/attachments/835893314821685312/854732657563926528/Yettrang_talk_series_3_1.png"</center> 
     <h2>You can meet professional with YES</h2>
     <h4>Just pay for $5</h4>
-
-    <form id="box" style="text-align: center;">
-      <input id="textt" type="text" placeholder="write down your name "/>
-      <input id="numberr" type="number" placeholder="write down your age "/> <br>
-            
-      <button onclick="printtheinput()" type="button"> OK
-        </button>
-      <div id='result'></div>
-
-      <button onclick="printtheinput2()" type="button"> OK 
-        </button>
-      <div id='result2'></div>
-
-      <script src="Script.js"></script>
-      
-      <div id="smart-button-container">
-        <div style="text-align: center;">
-          <div id="paypal-button-container"></div>
         </div>
-      </div>
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-    <script>
-      function initPayPalButton() {
-        paypal.Buttons({
-          style: {
-            shape: 'rect',
-            color: 'gold',
-            layout: 'vertical',
-            label: 'pay',
-            
-          },
-  
-          createOrder: function(data, actions) {
-            return actions.order.create({
-              purchase_units: [{"description":"Yettrang Talk Series Virtual Ticket","amount":{"currency_code":"USD","value":5}}]
-            });
-          },
-  
-          onApprove: function(data, actions) {
-            return actions.order.capture().then(function(details) {
-              alert('Transaction completed by ' + details.payer.name.given_name + '!');
-            });
-          },
-  
-          onError: function(err) {
-            console.log(err);
-          }
-        }).render('#paypal-button-container');
-      }
-      initPayPalButton();
-    </script>
+      <!-- -----blog-content------ -->
+      <h3>Please let me know your email</h3>
 
+      <form class="comment-form">
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <input id="number" type="number" placeholder="Enter Age"/>
+        <textarea rows="5" placeholder="Your comment">
+        </textarea>
+        <button type="submit" class="hero-btn red-btn">POST
+        COMMENT</button>
+      
     
-<div class="row" style="margin-left:1rem;margin-right:1rem;">
-  <div class="col-md-1"></div>
-  
-  <div class="col-md-10">
-  <form id="gform" class="gform" method="post"
-  action="https://script.google.com/macros/s/AKfycbwIK_rW3WbZdl8JifjlJbV3GmaeZb_lSjfmL2YX/exec">
-  <div class="form-elements">
-  <label for="name">name: </label>
-  <input type="text" class="form-control" name="Name" id="Nameg" placeholder="이름을 입력해주세요"/><br />
-  
-  <label for="email">Email Address:</label>
-  <input type="text" class="form-control" name="email" id="email" placeholder="이메일을 입력해주세요"/><br />
-  
-  <label for="email">Contents:</label>
-  <textarea class="form-control" name="contents" id ="contents" placeholder="내용을 입력해주세요" style="height:170px;"></textarea><br/>
-  <div style="font-size:3vmax;text-align: center;">
-  <button class="btn btn-dark" style="font-size: 1.7vmax;margin-bottom:5%;margin-top: -2rem;">
-  메시지 보내기</button></div>
-  </div>
-  <div class="thankyou_message" style="display:none;">
-  <!-- <h2><em>Thanks</em> for contacting us!<br>
-  We will get back to you soon!</h2> -->
-  <h2><em>감사합니다.</em><br>
-  곧 답장을 하겠습니다!</h2>
-  </div>
-  
-  <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
-  </script>
-  
-  </form>
-  
-  </div>
-  <div class="col-md-1"></div>
-  </div>
+      
+      </form>
 
 
+
+      <p></p>
+      <p></p>
+
+
+        <div id="smart-button-container">
+          <div style="text-align: center;">
+            <div id="paypal-button-container"></div>
+          </div>
+        </div>
+      <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+      <script>
+        function initPayPalButton() {
+          paypal.Buttons({
+            style: {
+              shape: 'rect',
+              color: 'gold',
+              layout: 'vertical',
+              label: 'pay',
+              
+            },
+    
+            createOrder: function(data, actions) {
+              return actions.order.create({
+                purchase_units: [{"description":"Yettrang Talk Series Virtual Ticket","amount":{"currency_code":"USD","value":5}}]
+              });
+            },
+    
+            onApprove: function(data, actions) {
+              return actions.order.capture().then(function(details) {
+                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+              });
+            },
+    
+            onError: function(err) {
+              console.log(err);
+            }
+          }).render('#paypal-button-container');
+        }
+        initPayPalButton();
+      </script>
+      </div>
+    </section>
+
+
+
+    <script>
+      var navlinks = document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px"
+       }
+    </script>
 
   </body>
 </html>
