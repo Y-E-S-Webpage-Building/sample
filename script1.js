@@ -7,7 +7,7 @@ const img = document.getElementById("poster-image");
 const yettrangURL = document.getElementById("yettrangLink")
 
 function imgWindow() {
-    window.open(img) 
+    window.open(img.src) 
 }
 
 // Function to increase image size
@@ -27,7 +27,7 @@ function resetImg() {
 
 // Open an URL in a new window
 function newWindow() {
-    window.open(yettrangURL)
+    window.open(yettrangURL.href)
 }
 
 // let value = 0;
