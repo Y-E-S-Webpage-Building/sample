@@ -1,114 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>JS Fundamentals – Part 1</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yettrang Talk Series</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Yettrang Talk Series!</h1>
+        <p class = "sub-header">🌎 It's always exciting to meet new people around the world. 🌏</p>
+    </header>
+    <main>
+        <section class="left">
+            <img id="poster-image" src="https://cdn.discordapp.com/attachments/835893314821685312/854732657563926528/Yettrang_talk_series_3_1.png" 
+            onclick="window.open(this.src)"
+            width="800"
+            />
+            <p class="poster-subtitle">(크게 보시려면 포스터를 클릭하세요!🔎)</p>
+        </section>
+        
+        <section class="right">
+          <div class="right-sub-header">결제 전, 반드시 아래 정보를 기입한 다음 <br>
+             Send 버튼을 눌러주세요. ⬇︎⬇︎ </div>
 
-  </head>
-  
-  <body>
-    <h1> Yettrang_Talk_Series – Y.E.S.
-    </h1> <br>
-    <p> Provides life hacks, path after graduation, personal and inspiring DIY mindset stories delivered from exclusive guest speakers!
-    <br>Give a try.<br>
-      <a href="https://www.w3schools.com/html/html_paragraphs.asp">how i learn paragraph</a>
-    </p> <br>
-    <form id="box" style="text-align: center;">
-      <input id="textt" type="text" placeholder="write down your name "/>
-      <input id="numberr" type="number" placeholder="write down your age "/> <br>
-            
-      <button onclick="printtheinput()" type="button"> InputName
-        </button>
-      <div id='result'></div>
-
-      <button onclick="printtheinput2()" type="button"> InputAge 
-        </button>
-      <div id='result2'></div>
-
-      <script src="Script.js"></script>
-    </form>
-    <p></p>
-
-
-
-    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="carpediem1119j@gmail.com"
+    <form class="gform pure-form pure-form-stacked" method="POST"
     action="https://script.google.com/macros/s/AKfycbxh3qGsgJFFukCd-Wwfqsvn5a3sWLwK9K7WPRCBztawIAeG9N-T/exec">
-    <!-- change the form action to your script url -->
 
-    <fieldset class="pure-group">
-    <label for="name">Name : </label>
-    <input id="name" name="name" required placeholder="Full Name." />
-    </fieldset>
+    <!-- action="https://script.google.com/macros/s/AKfycbygYzOlJw-o8ohc71gVyvf8TuySOFLlqbdKzQ_ABt3L4XtXoVMD7wn200RKN_sWWk8lmQ/exec"> -->
 
-    <fieldset class="pure-group">
-    <label for="telephone">Phone Number : </label>
-    <input id="telephone" name="telephone" required placeholder="Phone Number" />
-    </fieldset>
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name;" style="color:#05386B; font-size: 20px;">Full Name: </label><br>
+        <input id="name" name="name" required placeholder="First and Last Name" />
+      </fieldset>
+      
+      <fieldset class="pure-group">
+          <label for="email;" style="color:#05386B; font-size: 20px;">Email Address:</label><br>
+          <input id="email" name="email" type="email" value=""
+          required placeholder="your.name@email.com"/>
+          
+        <fieldset class="pure-group">
+            <label for="number;" style="color:#05386B; font-size: 20px;">Phone Number: </label><br>
+            <input id="number" name="number"
+            required placeholder="Phone Number"/>
+          </fieldset>
+        </fieldset>
+        
+        <fieldset class="pure-group">
+          <label for="comments;" style="color:#05386B; font-size: 20px;">Comments(Optional): </label><br>
+          <textarea id="comments" name="comments" rows="5"
+          placeholder="🌵 Tell us anything you want to share! 🌵"></textarea>
+        </fieldset>
 
-    <fieldset class="pure-group">
-    <label for="email">Email :</label>
-    <input id="email" name="email" type="email" value="" required placeholder="Please Write in proper Email form."/>
-    <span id="email-invalid" style="display:none"></span>
-    </fieldset>
-    </br></br>
-
-    <button class="button-success pure-button button-xlarge">
-    <i class="fa fa-paper-plane"></i>&nbsp;전송</button>
-    </br></br>
-    </form>
-
-    <!-- END -->
-
-    <!-- Submit the Form to Google Using "AJAX" -->
-    <script data-cfasync="false" type="text/javascript"
-    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-
-    <p></p>
-    
-    <img class="poster-image" src="https://cdn.discordapp.com/attachments/835893314821685314/841638601333669918/Yettrang_Talk_Series_1.png" alt="The Poster" width="500">
-    <p></p>
-    <script src = "script.js"> </script>
-
-  <div class="paying">
-    <div id="smart-button-container">
-        <div style="text-align: center; width:500px; position: center;">
-          <div id="paypal-button-container"></div>
-        </div>
-      </div>
-      <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-      <script>
-        function initPayPalButton() {
-          paypal.Buttons({
-            style: {
-              shape: 'rect',
-              color: 'gold',
-              layout: 'vertical',
-              label: 'pay',
-              
-            },
-
-            createOrder: function(data, actions) {
-              return actions.order.create({
-                purchase_units: [{"description":"Yettrang Talk Series Virtual Ticket","amount":{"currency_code":"USD","value":5}}]
-              });
-            },
-
-            onApprove: function(data, actions) {
-              return actions.order.capture().then(function(details) {
-                alert('Transaction completed by ' + details.payer.name.given_name + '!');
-              });
-            },
-
-            onError: function(err) {
-              console.log(err);
-            }
-          }).render('#paypal-button-container');
-        }
-        initPayPalButton();
-      </script>
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
     </div>
-  </body>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2 >Thanks for submitting this form!</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+
+    <p class="instruction-caption">결제 후, Zoom 링크와 Y.E.S. 이벤트 참여방법을 <br>
+    이메일로 보내드립니다. 📧</p>
+
+      <div id="smart-button-container">
+          <div id="paypal-button-container"></div>
+      </div>
+             <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+             <script>
+               function initPayPalButton() {
+                 paypal.Buttons({
+                   style: {
+                     shape: 'rect',
+                     color: 'gold',
+                     layout: 'vertical',
+                     label: 'pay',
+                     
+                   },
+             
+                   createOrder: function(data, actions) {
+                     return actions.order.create({
+                       purchase_units: [{"description":"Yettrang Talk Series Virtual Ticket","amount":{"currency_code":"USD","value":5}}]
+                     });
+                   },
+             
+                   onApprove: function(data, actions) {
+                     return actions.order.capture().then(function(details) {
+                       alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                     });
+                   },
+             
+                   onError: function(err) {
+                     console.log(err);
+                   }
+                 }).render('#paypal-button-container');
+               }
+               initPayPalButton();
+             </script>
+        </section>
+    </main>
+    <footer>
+        <p class="yettrang">Learn more about <a id="yettrangLink" href="https://www.yettrang.org/" onclick="newWindow();return false;">Yettrang Academy 📖 </a></p>
+    </footer>
+    <script src="script1.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+</body>
 </html>
