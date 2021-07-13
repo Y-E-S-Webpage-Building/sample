@@ -98,13 +98,14 @@ nav .fa{
   /* background-color: #9acd32; */
 }
 h1{
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 300;
+  padding: 40px;
 }
 
 .h1-p{
   color: #05386B;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 22px;
   margin-top: 5px;
@@ -141,9 +142,13 @@ body {
   .text-box h1{
     font-size: 26px;
     padding: 20px;
+    margin-top: 35%;
   }
   .text-box p{
     font-size: 15px;
+  }
+  .Course{
+    font-size: 10px;
   }
   img { max-width: 100%; height: auto; }
   yettrang-logo { 
