@@ -212,3 +212,19 @@ textarea {
     padding: 30px;
   }
 }
+
+@media (max-width: 500px){
+  /* main {
+    height: 85vh;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  } */
+  .left{
+    display: none;
+  
+  header{
+    position: absolute;
+  }
+}
