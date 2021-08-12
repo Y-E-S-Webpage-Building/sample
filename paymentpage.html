@@ -7,12 +7,16 @@
     <link href="paymentpage.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Yettrang Talk Series!</h1>
-        <p class = "sub-header" >🌎 It's always exciting to meet new people around the world. 🌏</p>
-    </header>
-    <br>
+    <div class="row">
+      <header>
+          <h1>Welcome to Yettrang Talk Series!</h1>
+          <p class = "sub-header" >🌎 It's always exciting to meet new people around the world. 🌏</p>
+      </header>
+    </div>
+
+    <div class="row">
     <main>
+      <div class="divide">
         <section class="left">
             <img id="poster-image" src="https://cdn.discordapp.com/attachments/835893314821685312/854732657563926528/Yettrang_talk_series_3_1.png" 
             onclick="window.open(this.src)"
@@ -20,10 +24,12 @@
             />
             <p class="poster-subtitle">(크게 보시려면 포스터를 클릭하세요!🔎)</p>
         </section>
-        
+      </div>
+      <div class="divide">
         <section class="right">
           <div class="right-sub-header">결제 전, 반드시 아래 정보를 기입한 다음 <br>
-             Send 버튼을 눌러주세요. ⬇︎⬇︎ </div>
+             Send 버튼을 눌러주세요. ⬇︎⬇︎ 
+            </div>
 
     <form class="gform pure-form pure-form-stacked" method="POST"
     action="https://script.google.com/macros/s/AKfycbxh3qGsgJFFukCd-Wwfqsvn5a3sWLwK9K7WPRCBztawIAeG9N-T/exec">
@@ -107,7 +113,9 @@
                initPayPalButton();
              </script>
         </section>
+      </div>
     </main>
+    </div>
     <footer>
         <p class="yettrang">Learn more about <a id="yettrangLink" href="https://www.yettrang.org/" onclick="newWindow();return false;">Yettrang Academy 📖 </a></p>
     </footer>

@@ -90,6 +90,13 @@ main {
   flex-direction: column;
   text-align: left;
 }
+
+@media(max-width: 800px) {
+  .row {
+    padding: 50px 0;
+  }
+}
+
 footer{
     margin-top: 10%;
     height: 5vh;
@@ -183,37 +190,7 @@ textarea {
   margin-left: 10px;
 }
 
-@media(max-width: 700px){
-  .text-box h1{
-    font-size: 20px;
-  }
-  .nav-links ul li{
-    display: block;
-  }
-  .nav-links{
-    position: absolute;
-    background: #f44336;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-  nav .fa{
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .nav-links ul{
-    padding: 30px;
-  }
-}
-
-@media (max-width: 500px){
+@media (max-width: 600px) {
   /* main {
     height: 85vh;
     color: #eee;
@@ -221,10 +198,5 @@ textarea {
     align-items: center;
     justify-content: space-around;
   } */
-  .left{
-    display: none;
-  
-  header{
-    position: absolute;
-  }
+
 }

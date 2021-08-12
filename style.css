@@ -53,13 +53,14 @@ nav{
   width: 90%;
   color: #fff;
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 .text-box h1{
   font-size: 62px;
+  margin-bottom: 15px;
 }
 .text-box p{
   margin-bottom: 50px;
@@ -136,17 +137,57 @@ margin-top: 7%;
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+  .text-box h1{
+    font-size: 26px;
+    padding: 20px;
+    margin-top: 35%;
+  }
+  .text-box p{
+    font-size: 15px;
+  }
+  .Course{
+    font-size: 10px;
+  }
+  img { 
+    max-width: 100%; height: auto;
+  }
+  yettrang-logo { 
+    max-width: 100%;
+    height: auto;
+    display: hidden; 
+  }
+  
+    html{
+    font-size:100%; 
+  }
+}
+
 @media (max-width: 600px){
   .header{
     font-size: 1%;
   }
 }
 
-@media screen (max-width: 600px) {
-  #poster-image
-    width: 100px ;
-  }
 
+
+@media (max-width: 1000px) {
+  #poster-image {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  #poster-image {
+    width: 70%;
+    margin: auto;
+  }
+  .text-box h1{
+    font-size: 32px;
+  }
 }
 
 
